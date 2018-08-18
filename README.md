@@ -85,3 +85,9 @@ Finalmente a ultima parte a ser explicado nessa primeira explicação é o **#in
 ### O main.cpp
 
 O main.cpp é um arquivo gerado pelo PIO e utiliza a linguagem C++ (**C** **P**lus **P**lus). Esse arquivo também possui duas funções que dividem o programa. A função *void setup()* é executada apenas uma vez por programa e a função *void loop()* é executada em *loop*, ou seja repetidamente, pelo programa. 
+
+## Finalizando
+
+Finalmente o projeto está pronto pra ser carregado no NodeMCU, o botão de *check* logo abaixo do simbolo de *home* no PIO permite checar se o programa não tem erros. Para carregar o programa clique no botão de seta logo abaixo do de *check*.
+
+Para testar se tudo esta ok, utilize o exemplo **Blink** presente nos exemplos.
