@@ -43,3 +43,45 @@ Clique no primeiro icone da barra, o **PlatformIO Home**, uma nova aba no progra
 %% Outra imagem
 
 Preencha no campo **Name** o nome do seu projeto, no campo **Board** escolha NodeMCU 0.9 e finalmente no campo **Framework** escolha Arduino. Clique em **Finish** e aguarde um pouco.
+
+## Entendo a estutura de um projeto
+
+Um projeto é basicamente contituído por duas pastas e 3 arquivos, todos os 5 são criados automaticamente pelo PlatformIO.
+
+- Pasta **lib**: Nessa pasta estão contidos códigos produzidos por terceiros e que serão utilizados no código principal. Esses códigos são chamados de **bibliotecas** ou **librarys**
+- Pasta **src**: Nessa pasta está contido o main.cpp, o arquivo principal do programa, nele será incluido as bibliotecas e o código propriamente dito.
+- Os outros três são arquivos de configurações que por enquanto não são importantes.
+
+### Uma brevissima explicação sobre o C++
+
+A programação de um NodeMCU envolve a  liguagem de programação C++. Existem muitos contéudos para serem dominados a se programar em C++, mas para manter a simplicidade aqui presente, serão apresentadas somentes as a serem utilizadas.
+
+C++ segue a seguinte extrutura básica para variavéis, primeiro declara-se o tipo da variável e sem seguinte o nome que ela terá. Opcionalmente será declarado o valor da mesma.
+
+```c++
+    tipo nome = valor
+    int numero-de-lampadas = 3
+    char nome = "Projeto1"
+```
+
+As funções em C++ são semelhantes as variáveis possuindo nome e tipo, porém as mesmas podem ou não receber parâmetros. Finalmente uma função precisa realizar alguma operação, essa operação é descrita dentro dos { }. **Nota:** funções são bem complexas, mas nessa atividade utilizaremos apenas as do tipo *void*, essas não recebem nenhum parâmetro.
+
+```c++
+    tipo nome(parametos){
+        realizar isso;
+    }
+
+    int somarDoisNumeros(int x, int y){
+        return x+y;
+    }
+```
+
+Finalmente a ultima parte a ser explicado nessa primeira explicação é o **#include**. As bibliotecas presentes na pasta **lib** precisam ser importadas para o arquivo principal, para isso é o utilizado o **#include**, a *syntax* é bem simple é o #include seguido do nome_da_biblioeca.h entre < >.
+
+```c++
+    #include <Biblioteca.h>
+```
+
+### O main.cpp
+
+O main.cpp é um arquivo gerado pelo PIO e utiliza a linguagem C++ (**C** **P**lus **P**lus). Esse arquivo também possui duas funções que dividem o programa. A função *void setup()* é executada apenas uma vez por programa e a função *void loop()* é executada em *loop*, ou seja repetidamente, pelo programa. 
