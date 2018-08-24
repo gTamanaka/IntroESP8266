@@ -1,0 +1,29 @@
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<script>
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'line' //ou line, pie, spline, bar
+    },
+    title: {
+        text: 'Dados do sensor'
+    },
+
+    subtitle: {
+        text: 'Teste monitoramento em tempo real'
+    },
+
+    data: {
+        csvURL: 'http://robotica.ufscar.br/agua/live.php',
+        enablePolling: true
+    }
+});
+
+</script>
+
