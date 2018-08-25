@@ -28,19 +28,19 @@ Após a instalação do Atom, realizaremos a instalação do PlatformIO. O Platf
 
 Com o Atom aberto, nas opções superiores clique em **File** seguido de **Settings**
 
-%% Inserir figura
+<!-- %% Inserir figura -->
 
 Clique na opção **Install** e no campo de pesquisa escreva *PlatformIO*, aparecerão os pacotes disponíveis, instale a opção **platformio-ide**. Todo o processo levará um tempo considerável.
 
-%% Outra Image
+<!-- %% Outra Image -->
 
 Depois do Atom ser reabaerto, provavelmente você verá uma barra lateral extra mais a esquerda, caso não apareceça clique na opção **View** e depois em **Toggle Toolbar**.
 
-%% Outra imagem
+<!-- %% Outra imagem -->
 
 Clique no primeiro icone da barra, o **PlatformIO Home**, uma nova aba no programa se abrirá. Nessa nova aba clique no **New Project**
 
-%% Outra imagem
+<!-- %% Outra imagem -->
 
 Preencha no campo **Name** o nome do seu projeto, no campo **Board** escolha NodeMCU 0.9 e finalmente no campo **Framework** escolha Arduino. Clique em **Finish** e aguarde um pouco.
 
